@@ -3,75 +3,47 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://blog.braumace.cn",
-  logo: "logo.png",
-  favicon: "/favicon.ico",
-
+  hostname: "https://pe.studio.000708.xyz",
+  logo: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png",
+  favicon: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png",
   author: {
-    name: "BraumAce",
-    url: "https://blog.braumace.cn/article",
+    name: "Glow Studio", // 作者姓名
+    email: "2449837493@qq.com", // 作者 Email
+    url: "https://studio.000708.xyz" // 作者网站
   },
-
-  // 图标库
-//   iconAssets: "fontawesome-with-brands",
-   iconAssets: "//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.css",
-
-  repo: "https://github.com/BraumAce/ByteLighting",
+  iconAssets: "iconfont", // 字体图标资源链接
+  logo: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png", // 网站左上角logo
+  logoDark: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png", // 黑夜模式下网站左上角logo
+  repo: "https://github.com/somediang", // github地址
   docsDir: "src",
-
-  navbarLayout: {
-    start: ["Brand"],
-    center: [],
-    end: ["Search", "Links", "Repo", "Outlook"],
-  },
   navbar,
   sidebar,
-  sidebarSorter: "order",
-  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
+  footer: "",
   displayFooter: false,
+  editLink: false, // 是否展示编辑此页链接
+  contributors: false, // 是否展示贡献者
+  //路径导航
+  breadcrumb: true,
+  pageInfo: ["ReadingTime", "Date", "Word", "Category", "Tag"],
 
-  // 关闭路径导航
-  breadcrumb: false,
-
-  pageInfo: ["Author", "Date", "Category", "Tag", "Original", "Word", "ReadingTime"],
-
+  /**
+   * 博客模式配置
+   */
   blog: {
-    avatar: "BraumAce.jpg",
-    description: "一个后端开发者",
-    sidebarDisplay: "mobile",
+    name: 'Glow Studio', // 博主姓名
+    avatar: 'https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png', // 博主头像
+    description: '心心相融，爱达未来', // 口号、座右铭或介绍语
     intro: "/intro.html",
-    medias: {
-      Email: "mailto:1693717911@qq.com",
-      Gitee: "https://gitee.com/BraumAce",
-      GitHub: "https://github.com/BraumAce",
-      // Gitlab: "https://example.com",
-      // Lark: "https://www.feishu.cn/invitation/page/add_contact/?token=e16lc6b4-120b-4742-b51f-ca731b693bfa&amp;unique_id=UBZmuOUVhQ7tEjVABCoQtQ==",
-      QQ: "tencent://message/?uin=1693717911&Site=&Menu=yes",
-      Wechat: "weixin://dl/business/?t=Pithy-SeeYou",
-      Zhihu: "https://www.zhihu.com/people/18779889803",
-      BiliBili: "https://space.bilibili.com/351506386",
+    medias: { // 博主的媒体链接配置
+      BiliBili: "https://space.bilibili.com/702028797",
+      WechatMP: "https://yanxuan.nosdn.127.net/41c14c219f06fcc1ceefc861d3c391a1.jpg",
+      QQ: "https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=EEh7V2N3pRqAWGrPWW2kSTwdKmZHm2SD&authKey=wwaCNoL3F%2Bi5wbyUy7LL88G1L%2FC29ARggZ6PJa2ue5%2BAZMyLmlDsI6a9bP6%2BQfOK&noverify=0&group_code=948504002",
+      Email: "mailto:2449837493@qq.com",
     },
+    roundAvatar: true, // 是否剪裁头像为圆形形状
+    articlePerPage: 5, // 每页的文章数量
   },
-
-  // page meta
-  metaLocales: {
-    lastUpdated: "上次更新",
-    editLink: "在 GitHub 上编辑此页",
-  },
-
-  // 加密文章
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
-
   hotReload: true,
-
-  blogLocales: {
-    reprint: "转载",                  
-  },
-
   plugins: {
     blog: {
         type: [
@@ -109,39 +81,62 @@ export default hopeTheme({
         },
       ],
     },
-
-    // 评论功能
-    comment: {
-      provider: 'Giscus',
-      repo: "BraumAce/ByteLighting",
-      repoId: "R_kgDOMP-taA",
-      category: "Announcements",
-      categoryId: "DIC_kwDOMP-taM4CghxQ",
-    },
-
+    /**
+     * 主题启用的组件
+     */
     components: {
-      components: ["Badge", "VPCard", "BiliBili", "PDF"],
+      components: [
+        "ArtPlayer",
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "PDF",
+        "Share",
+        "SiteInfo",
+        "StackBlitz",
+        "VideoPlayer",
+        "XiGua",
+        "YouTube",
+      ],
     },
 
     copyright: {
       global: true,
-      canonical: "https://blog.braumace.cn/",
+      canonical: "https://studio.000708.xyz",
     },
 
     // These features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
       attrs: true,
+      chart: true,
       codetabs: true,
       component: true,
       demo: true,
+      echarts: true,
       figure: true,
+      flowchart: true,
+      gfm: true,
       imgLazyload: true,
       imgSize: true,
       include: true,
+      katex: true,
       mark: true,
+      mermaid: true,
+      card: true,
       plantuml: true,
       spoiler: true,
+      sub: true,
+      sup: true,
+      tabs: true,
+      tasklist: true,
+      vPre: true,
+      hint: true,
+      vuePlayground: true,
+      playground: {
+        presets: ["ts", "vue"],
+      },
+      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",
@@ -155,84 +150,13 @@ export default hopeTheme({
           },
         },
       ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      tasklist: true,
-      vPre: true,
-      hint: true,
-
-      chart: true,
-      echarts: true,
-      flowchart: true,
-
-      katex: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // install mermaid before enabling it
-      // mermaid: true,
-
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // install reveal.js before enabling it
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-
-      // install @vue/repl before enabling it
-      // vuePlayground: true,
-
-      // install sandpack-vue3 before enabling it
-      // sandpack: true,
     },
 
     // PWA支持
     pwa: {
-      favicon: "/favicon.ico",
       cacheHTML: true,
       cacheImage: true,
       appendBase: true,
-      apple: {
-        icon: "/assets/icon/apple-icon-152.png",
-        statusBarColor: "black",
-      },
-      msTile: {
-        image: "/assets/icon/ms-icon-144.png",
-        color: "#ffffff",
-      },
-      manifest: {
-        icons: [
-          {
-            src: "/assets/icon/chrome-512.png",
-            sizes: "512x512",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/chrome-192.png",
-            sizes: "192x192",
-            type: "image/png",
-          },
-        ],
-        shortcuts: [
-          {
-            name: "ByteLighting",
-            short_name: "Byte",
-            url: "/",
-            icons: [
-              {
-                src: "/assets/icon/guide-maskable.png",
-                sizes: "192x192",
-                purpose: "maskable",
-                type: "image/png",
-              },
-            ],
-          },
-        ],
-      },
     },
   },
 }, { custom: true, });
