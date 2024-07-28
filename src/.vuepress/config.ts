@@ -7,7 +7,7 @@ import theme from "./theme.js";
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
-  base: "/ByteLighting/",
+  base: "/",
 
   lang: "zh-CN",
   title: "ByteLighting",
