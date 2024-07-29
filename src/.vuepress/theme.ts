@@ -3,27 +3,37 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://pe.studio.000708.xyz",
-  logo: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png", // 网站左上角logo
-  logoDark: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png", // 黑夜模式下网站左上角logo
-  favicon: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png",
+  hostname: "https://blog.braumace.cn",
+  logo: "logo.png",
+  favicon: "/favicon.ico",
+
   author: {
-    name: "Glow Studio", // 作者姓名
-    email: "2449837493@qq.com", // 作者 Email
-    url: "https://studio.000708.xyz" // 作者网站
+    name: "BraumAce",
+    url: "https://blog.braumace.cn/article",
   },
-  iconAssets: "//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.css", // 字体图标资源链接
-  repo: "https://github.com/somediang", // github地址
+
+  // 图标库
+//   iconAssets: "fontawesome-with-brands",
+   iconAssets: "//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.css",
+
+  repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
+
+  navbarLayout: {
+    start: ["Brand"],
+    center: [],
+    end: ["Search", "Links", "Repo", "Outlook"],
+  },
   navbar,
   sidebar,
-  footer: "",
+  sidebarSorter: "order",
+  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
   displayFooter: false,
-  editLink: false, // 是否展示编辑此页链接
-  contributors: false, // 是否展示贡献者
-  //路径导航
-  breadcrumb: true,
-  pageInfo: ["ReadingTime", "Date", "Word", "Category", "Tag"],
+
+  // 关闭路径导航
+  breadcrumb: false,
+
+  pageInfo: ["Author", "Date", "Category", "Tag", "Original", "Word", "ReadingTime"],
 
   blog: {
     avatar: "BraumAce.jpg",
