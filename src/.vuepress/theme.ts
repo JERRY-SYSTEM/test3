@@ -92,7 +92,6 @@ export default hopeTheme({
     components: {
       components: [
         "ArtPlayer",
-        "AudioPlayer",
         "Badge",
         "BiliBili",
         "PDF",
@@ -100,8 +99,7 @@ export default hopeTheme({
         "SiteInfo",
         "StackBlitz",
         "VideoPlayer",
-        "XiGua",
-        "YouTube",
+        "VPCard",
       ],
     },
 
@@ -115,7 +113,7 @@ export default hopeTheme({
       align: true,
       attrs: true,
       codetabs: true,
-      components: true,
+      component: true,
       demo: true,
       figure: true,
       imgLazyload: true,

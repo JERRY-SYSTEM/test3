@@ -16,6 +16,11 @@ category: 文档
 
 - 如果您想了解GlowPE的特色功能及使用教程，请查看教程
 - 如果您在使用过程中遇到了bug，想要寻找解决方法，请先详细翻阅常见问题，无法解决请进Q群 [948504002](https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=EEh7V2N3pRqAWGrPWW2kSTwdKmZHm2SD&authKey=wwaCNoL3F%2Bi5wbyUy7LL88G1L%2FC29ARggZ6PJa2ue5%2BAZMyLmlDsI6a9bP6%2BQfOK&noverify=0&group_code=948504002) [576153205](https://jq.qq.com/?_wv=1027&k=kIAqdVde)
+
+## 视频介绍
+```compenent Bilibili
+bvid: BV1sZ421N7jN
+```
   
 ## 更新渠道
 - [Bilibili](https://space.bilibili.com/702028797)
