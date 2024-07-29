@@ -115,7 +115,7 @@ function AddBtnSpin() {
 const LoadMusicList = (callback) => {
   axios({
     method: 'get',
-    url: '//file.mo7.cc/music/list.json',
+    url: '//www.shujuhe.cn/action/handsome-meting-api?server=netease&type=playlist&id=412191154&auth=f04d63b2daf36b098cb926c54dbf9e15',
     params: {},
   }).then((response) => {
     var listData = response.data;
@@ -239,7 +239,7 @@ onMounted(() => {
     color: rgba(255, 255, 255, 0.7);
   }
   .btnImg {
-    background-image: url('/assets/images/playBtn.webp');
+    background-image: url('https://static.tang-xinli.com/gh/BraumAce/ByteLighting@436af4e6c534b70e343cd6e3fd06b872a3a4ed48/src/.vuepress/public/assets/images/playBtn.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
