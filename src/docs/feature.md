@@ -1,6 +1,7 @@
 ---
 author: Glow Studio
 date: 2024-07-13
+icon: palette
 article: false
 category: 文档
 ---

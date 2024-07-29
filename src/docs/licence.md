@@ -1,6 +1,7 @@
 ---
 author: Glow Studio
 date: 2024-01-03
+icon: license
 article: false
 category: 文档
 ---

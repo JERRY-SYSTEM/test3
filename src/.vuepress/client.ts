@@ -20,7 +20,7 @@ export default defineClientConfig({
   setup() {
     onMounted(() => {});
     setupRunningTimeFooter(
-      new Date("2024-06-30"),
+      new Date("2023-01-04"),
       {
         "/": "已运行 :day 天 :hour 小时 :minute 分钟",
       },

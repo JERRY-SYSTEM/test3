@@ -1,7 +1,9 @@
 ---
 author: Glow Studio
 date: 2024-07-12
+icon: date
 category: 文档
+star: true
 ---
 
 # 更新日志  

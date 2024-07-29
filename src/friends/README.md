@@ -1,5 +1,6 @@
 ---
 author: Glow Studio
+icon: community
 date: 2024-06-01
 article: false
 category: 友链

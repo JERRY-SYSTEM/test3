@@ -4,6 +4,9 @@ export const downsb = arraySidebar([
     {
         text: '下载',
         icon: 'link',
-        collapsible: true
+        collapsible: true,
+        children: [
+            '/download/history.md'
+        ]
     },
 ])

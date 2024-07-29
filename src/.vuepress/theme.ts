@@ -12,7 +12,7 @@ export default hopeTheme({
     email: "2449837493@qq.com", // 作者 Email
     url: "https://studio.000708.xyz" // 作者网站
   },
-  iconAssets: "//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.css", // 字体图标资源链接
+  iconAssets: "//at.alicdn.com/t/c/font_2410206_5vb9zlyghj.css", // 字体图标资源链接
   repo: "https://github.com/somediang", // github地址
   docsDir: "src",
   navbarLayout: {
@@ -114,8 +114,10 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
+      chart: true,
       codetabs: true,
       component: true,
+      card: true,
       demo: true,
       figure: true,
       imgLazyload: true,
@@ -124,6 +126,16 @@ export default hopeTheme({
       mark: true,
       plantuml: true,
       spoiler: true,
+      sub: true,
+      sup: true,
+      tabs: true,
+      tasklist: true,
+      vPre: true,
+      hint: true,
+      chart: true,
+      echarts: true,
+      flowchart: true,
+      katex: true,
       stylize: [
         {
           matcher: "Recommended",
@@ -137,16 +149,6 @@ export default hopeTheme({
           },
         },
       ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      tasklist: true,
-      vPre: true,
-      hint: true,
-      chart: true,
-      echarts: true,
-      flowchart: true,
-      katex: true,
     },
 
     // PWA支持

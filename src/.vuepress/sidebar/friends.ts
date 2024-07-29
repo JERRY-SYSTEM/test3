@@ -4,6 +4,9 @@ export const friesb = arraySidebar([
     {
         text: '友链',
         icon: 'community',
-        collapsible: true
+        collapsible: true,
+        children: [
+            '/friends/applyto.md'
+        ]
     },
 ])

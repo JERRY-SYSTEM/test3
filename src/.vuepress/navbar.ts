@@ -3,7 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
     "/",
     {text: "文档", icon: "read", link: "/docs/"},
-    {text: "下载", icon: "link", link: "/download"},
+    {text: "下载", icon: "link", link: "/download/"},
     {text: "捐赠", icon: "selection", link: "/donate/"},
     {text: "友链", icon: "community", link: "/friends/"},
     {

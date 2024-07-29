@@ -1,4 +1,5 @@
 ---
+icon: read
 author: Glow Studio
 date: 2024-01-03
 article: false

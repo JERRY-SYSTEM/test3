@@ -4,6 +4,9 @@ export const donasb = arraySidebar([
     {
         text: '捐赠',
         icon: 'selection',
-        collapsible: true
+        collapsible: true,
+        children: [
+            '/donate/donators.md'
+        ]
     },
 ])
