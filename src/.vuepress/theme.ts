@@ -25,24 +25,43 @@ export default hopeTheme({
   breadcrumb: true,
   pageInfo: ["ReadingTime", "Date", "Word", "Category", "Tag"],
 
-  /**
-   * 博客模式配置
-   */
   blog: {
-    name: 'Glow Studio', // 博主姓名
-    avatar: 'https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png', // 博主头像
-    description: '心心相融，爱达未来', // 口号、座右铭或介绍语
+    avatar: "BraumAce.jpg",
+    description: "一个后端开发者",
+    sidebarDisplay: "mobile",
     intro: "/intro.html",
-    medias: { // 博主的媒体链接配置
-      BiliBili: "https://space.bilibili.com/702028797",
-      WechatMP: "https://yanxuan.nosdn.127.net/41c14c219f06fcc1ceefc861d3c391a1.jpg",
-      QQ: "https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=EEh7V2N3pRqAWGrPWW2kSTwdKmZHm2SD&authKey=wwaCNoL3F%2Bi5wbyUy7LL88G1L%2FC29ARggZ6PJa2ue5%2BAZMyLmlDsI6a9bP6%2BQfOK&noverify=0&group_code=948504002",
-      Email: "mailto:2449837493@qq.com",
+    medias: {
+      Email: "mailto:1693717911@qq.com",
+      Gitee: "https://gitee.com/BraumAce",
+      GitHub: "https://github.com/BraumAce",
+      // Gitlab: "https://example.com",
+      // Lark: "https://www.feishu.cn/invitation/page/add_contact/?token=e16lc6b4-120b-4742-b51f-ca731b693bfa&amp;unique_id=UBZmuOUVhQ7tEjVABCoQtQ==",
+      QQ: "tencent://message/?uin=1693717911&Site=&Menu=yes",
+      Wechat: "weixin://dl/business/?t=Pithy-SeeYou",
+      Zhihu: "https://www.zhihu.com/people/18779889803",
+      BiliBili: "https://space.bilibili.com/351506386",
     },
-    roundAvatar: true, // 是否剪裁头像为圆形形状
-    articlePerPage: 5, // 每页的文章数量
   },
+
+  // page meta
+  metaLocales: {
+    lastUpdated: "上次更新",
+    editLink: "在 GitHub 上编辑此页",
+  },
+
+  // 加密文章
+  encrypt: {
+    config: {
+      "/demo/encrypt.html": ["1234"],
+    },
+  },
+
   hotReload: true,
+
+  blogLocales: {
+    reprint: "转载",                  
+  },
+
   plugins: {
     blog: {
         type: [
