@@ -4,16 +4,15 @@ import sidebar from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://pe.studio.000708.xyz",
-  logo: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png",
+  logo: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png", // 网站左上角logo
+  logoDark: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png", // 黑夜模式下网站左上角logo
   favicon: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png",
   author: {
     name: "Glow Studio", // 作者姓名
     email: "2449837493@qq.com", // 作者 Email
     url: "https://studio.000708.xyz" // 作者网站
   },
-  iconAssets: "iconfont", // 字体图标资源链接
-  logo: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png", // 网站左上角logo
-  logoDark: "https://yanxuan.nosdn.127.net/f9758a122f1284b59b3df7a0345ae7ef.png", // 黑夜模式下网站左上角logo
+  iconAssets: "//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.css", // 字体图标资源链接
   repo: "https://github.com/somediang", // github地址
   docsDir: "src",
   navbar,
@@ -109,34 +108,16 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
       codetabs: true,
       component: true,
       demo: true,
-      echarts: true,
       figure: true,
-      flowchart: true,
-      gfm: true,
       imgLazyload: true,
       imgSize: true,
       include: true,
-      katex: true,
       mark: true,
-      mermaid: true,
-      card: true,
       plantuml: true,
       spoiler: true,
-      sub: true,
-      sup: true,
-      tabs: true,
-      tasklist: true,
-      vPre: true,
-      hint: true,
-      vuePlayground: true,
-      playground: {
-        presets: ["ts", "vue"],
-      },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",
@@ -150,6 +131,16 @@ export default hopeTheme({
           },
         },
       ],
+      sub: true,
+      sup: true,
+      tabs: true,
+      tasklist: true,
+      vPre: true,
+      hint: true,
+      chart: true,
+      echarts: true,
+      flowchart: true,
+      katex: true,
     },
 
     // PWA支持
