@@ -80,28 +80,23 @@ export default hopeTheme({
         },
       ],
     },
-    /**
-     * 主题启用的组件
-     */
+
+    // 评论功能
+    comment: {
+      provider: 'Giscus',
+      repo: "BraumAce/ByteLighting",
+      repoId: "R_kgDOMP-taA",
+      category: "Announcements",
+      categoryId: "DIC_kwDOMP-taM4CghxQ",
+    },
+
     components: {
-      components: [
-        "ArtPlayer",
-        "AudioPlayer",
-        "Badge",
-        "BiliBili",
-        "PDF",
-        "Share",
-        "SiteInfo",
-        "StackBlitz",
-        "VideoPlayer",
-        "XiGua",
-        "YouTube",
-      ],
+      components: ["Badge", "VPCard", "BiliBili", "PDF"],
     },
 
     copyright: {
       global: true,
-      canonical: "https://studio.000708.xyz",
+      canonical: "https://blog.braumace.cn/",
     },
 
     // These features are enabled for demo, only preserve features you need here
@@ -137,17 +132,78 @@ export default hopeTheme({
       tasklist: true,
       vPre: true,
       hint: true,
+
       chart: true,
       echarts: true,
       flowchart: true,
+
       katex: true,
+
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+
+      // install mermaid before enabling it
+      // mermaid: true,
+
+      // playground: {
+      //   presets: ["ts", "vue"],
+      // },
+
+      // install reveal.js before enabling it
+      // revealJs: {
+      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+      // },
+
+      // install @vue/repl before enabling it
+      // vuePlayground: true,
+
+      // install sandpack-vue3 before enabling it
+      // sandpack: true,
     },
 
     // PWA支持
     pwa: {
+      favicon: "/favicon.ico",
       cacheHTML: true,
       cacheImage: true,
       appendBase: true,
+      apple: {
+        icon: "/assets/icon/apple-icon-152.png",
+        statusBarColor: "black",
+      },
+      msTile: {
+        image: "/assets/icon/ms-icon-144.png",
+        color: "#ffffff",
+      },
+      manifest: {
+        icons: [
+          {
+            src: "/assets/icon/chrome-512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+        ],
+        shortcuts: [
+          {
+            name: "ByteLighting",
+            short_name: "Byte",
+            url: "/",
+            icons: [
+              {
+                src: "/assets/icon/guide-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+            ],
+          },
+        ],
+      },
     },
   },
 }, { custom: true, });
